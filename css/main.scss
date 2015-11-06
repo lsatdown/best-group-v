@@ -1,0 +1,255 @@
+
+@import "reset";
+
+$grey: #e1e4e9;
+$font-stack: 'Univers LT W01_45 Light1475944', helvetica neue, helvetica, sans-serif;
+$button-padding:12px 16px;
+$container-padding:2%;
+
+body {
+    background:#222;
+    color:#3b3b3b;
+}
+
+// typography
+p, h1, h2, h3, h4, li, a {
+    font-family:$font-stack;
+    -webkit-font-smoothing: antialiased;
+    font-weight:200;
+    line-height:1.2;
+}
+p, h2, h3, h4 {
+    margin:0 0 20px 0;
+}
+p {
+    font-size:20px;
+}
+h1 {
+    font-size:40px;
+    margin:0 0 30px 0;
+}
+h2 {
+    font-size:32px;
+}
+h3 {
+    font-size:24px;
+}
+h4 {
+    font-size:20px;
+}
+
+// grid, structure
+.full-row {
+    background:$grey;
+    padding:0 0 80px 0;
+}
+.container {
+    max-width:1100px;
+    margin:0 auto;
+    position:relative;
+}
+.grid-block:after {
+    content:'';
+    display:block;
+    width:0;
+    height:0;
+    visibility: hidden;
+    clear:both;
+}
+.grid-item {
+    float:left;
+}
+.grid-1-2 {
+    width:50%;
+}
+.grid-1-3 {
+    width:33.33333333%;
+}
+.grid-2-3 {
+    width:66.66666667%;
+}
+
+.border-button {
+    -webkit-tap-highlight-color:transparent;
+    overflow:hidden;
+    border:1px solid #fff;
+    opacity:0.85;
+    
+    span {
+        padding:$button-padding;
+        display:inline-block;
+        color:#fff;
+        position:relative;
+    }
+    
+    span.icon {
+        border-right:1px solid #fff;
+        padding-left:9px;
+        padding-right:9px;
+        float:left;
+    }
+}
+
+svg {
+    display:block;
+}
+.svg-icon {
+    stroke:#fff;
+}
+.arrow-icon {
+    stroke:#333;
+}
+
+// header, nav
+.main-header {
+    color:#fff;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:auto;
+    z-index:100;
+}
+.main-header .container {
+    padding-top:40px;
+}
+
+#best-logo {
+    padding:11px 0;
+    font-size:29px;
+    line-height:1.1;
+    float:left;
+    
+    span {
+        color:#a1abac;
+        display:block;
+    }
+}
+
+#show-nav-btn {
+    position:fixed;
+    top:10px;
+    right:0;
+    z-index:1000;
+    padding:15px;
+    display:none;
+}
+
+nav {
+    float:right;
+    
+    ul {
+        overflow:hidden;
+        
+        li {
+            float:left;
+            
+            a {
+                padding:$button-padding;
+                font-size:17px;
+                border:1px solid transparent;
+                display:block;
+            }
+        }
+        
+        li.highlight {
+            margin:0 0 0 10px;
+            
+            a {
+                border-color:#749eac;
+                color:#749eac;
+            }
+        }
+    }
+}
+
+// nav-on style
+.nav-on nav {
+    display:block;
+}
+
+.nav-on section {
+    opacity:0.6;
+}
+
+// homepage
+.hero-section {
+    min-height:760px;
+    background-color:#333;
+    background:url("../../images/hero2.jpg") center center no-repeat;
+    background-size:cover;
+    padding:320px 0 80px 0;
+    
+    h1 {
+        color:#12a3da;
+    }
+}
+
+.pullout {
+    position:absolute;
+    top:-60px;
+    background:$grey;
+    padding:0 30px;
+    
+    h3 {
+        margin:0;
+        line-height:60px;
+    }
+    
+    .icon {
+        position:absolute;
+        right:30px;
+        top:calc(50% - 8px);
+    }
+}
+
+.inner {
+    overflow:hidden;
+    height:260px;
+    position:relative;
+    display:block;
+}
+
+.text-inner {
+    padding:30px;
+    background:#fff;
+    transition:all 0.15s ease-in;
+}
+.text-inner:hover {
+    background:#f9f9f9;
+}
+
+.tiles {
+    .with-mark-right:before,
+    .with-mark-right:after,
+    .with-mark-top:before {
+        content:'';
+        display:block;
+        position:absolute;
+        right:0;
+        width:1px;
+        height:45px;
+        background:#d5d7d6;
+    }
+    .with-mark-right:before {
+        top:0;
+    }
+    .with-mark-right:after {
+        bottom:0;
+    }
+    .with-mark-top:before {
+        top:0;
+        width:45px;
+        height:1px;
+    }
+}
+
+.image-inner {
+    background:url("../../images/tile1.jpg") center top no-repeat;
+    background-size:cover;
+}
+
+
+
+
+@import "mob";

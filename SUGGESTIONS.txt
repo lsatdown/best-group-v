@@ -1,0 +1,23 @@
+Transition/animation/UX suggestions
+
+- It's a very elegant website, so I think subtlety is in order here...
+
+- A soft animation on the text when the page loads might be quite good
+on this kind of site?
+
+- Read more button could maybe expand to the side a little bit, or something
+subtle like that
+
+- Navigation: perhaps something like hovering on one, gently fades out
+the others?
+
+- Mobile navigation: I went for a simple overlay, but I think something
+a bit more modern might work: say a full screen slide in
+
+- Mobile navigation icon: Decided to fix it to the top right, not sure
+if that's what was intended, but I feel like it's easier to use that
+way
+
+- Tiles: I've done a colour change transition, but maybe instead we
+could do something where the text moves up a notch and a small "view more"
+or arrow icon comes in - or something along those lines
