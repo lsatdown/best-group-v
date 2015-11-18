@@ -1,0 +1,137 @@
+@media screen and (max-width:1130px) {
+    .container {
+        padding:0 $container-padding;
+    }
+    
+    // to account for the padding on the container, and make
+    // sure it stays all nicely lined up
+    .pullout {
+        width:(100% - (2 * $container-padding)) * 0.6666666;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    h1 {
+        font-size:36px;
+    }
+    
+    #best-logo {
+        float:none;
+    }
+    
+    .main-header .container {
+        padding-top:10px;
+    }
+    
+    #show-nav-btn {
+        display:block;
+    }
+    
+    nav {
+        float:none;
+        background:#3b3b3b;
+        position:fixed;
+        top:0;
+        right:0;
+        width:50%;
+        max-height:100%;
+        overflow-y:scroll;
+        padding:50px 30px 30px 30px;
+        z-index:999;
+        display:none;
+        
+        ul {
+            text-align:center;
+            
+            li {
+                float:none;
+                display:block;
+            }
+            
+            li.highlight {
+                margin:0;
+            }
+        }
+    }
+    
+    .hero-section {
+        padding-top:180px;
+        min-height:670px;
+    }
+}
+
+@media screen and (max-width:740px) {
+    h1 {
+        font-size:30px;
+    }
+    h3 {
+        font-size:20px;
+    }
+    h4 {
+        font-size:18px;
+    }
+    
+    #best-logo {
+        font-size:24px;
+    }
+    
+    nav {
+        width:100%;
+        left:0;
+    }
+    
+    .hero-section .grid-2-3,
+    .pullout.grid-2-3 {
+        width:82%;
+    }
+    
+    .tiles {
+        .grid-1-3 {
+            width:50%;
+        }
+        
+        .grid-2-3 {
+            width:100%;
+        }
+        
+        .with-mark-right:after,
+        .with-mark-top:before {
+            content:'';
+            display:none;
+            opacity:0;
+            visibility:hidden;
+        }
+        .grid-1-3:nth-of-type(odd) .text-inner:before {
+            content:'';
+            display:block;
+            position:absolute;
+            right:0;
+            top:0;
+            width:1px;
+            height:45px;
+            background:#d5d7d6;
+        }
+        
+        .text-inner {
+            padding:22px;
+        }
+    }
+    
+    .pullout {
+        padding:0 12px;
+        
+        .icon {
+            right:20px;
+        }
+    }
+    
+    .inner {
+        height:160px;
+    }
+}
+
+@media screen and (max-width:520px) {
+    h1 {
+        font-size:27px;
+    }
+}
